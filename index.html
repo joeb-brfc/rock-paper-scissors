@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rock Paper Scissors</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Link to your CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-wrapper">
+    <h1>Rock • Paper • Scissors</h1>
+    <p class="subtitle">Best the computer in a race of wits and luck ⚡</p>
+
+    <div class="choices">
+      <button class="choice-btn" data-choice="rock">
+        <span class="emoji">✊</span>
+        Rock
+      </button>
+      <button class="choice-btn" data-choice="paper">
+        <span class="emoji">✋</span>
+        Paper
+      </button>
+      <button class="choice-btn" data-choice="scissors">
+        <span class="emoji">✌️</span>
+        Scissors
+      </button>
+    </div>
+
+    <div class="arena">
+      <div class="player-panel" id="user-panel">
+        <div class="player-label">You</div>
+        <div class="player-pick" id="user-pick">❔</div>
+      </div>
+      <div class="vs">VS</div>
+      <div class="player-panel" id="computer-panel">
+        <div class="player-label">Computer</div>
+        <div class="player-pick" id="computer-pick">❔</div>
+      </div>
+    </div>
+
+    <div class="scoreboard">
+      <span>You: <strong id="user-score">0</strong></span>
+      <span>Computer: <strong id="computer-score">0</strong></span>
+    </div>
+
+    <p class="result-text" id="result-text">Make your move!</p>
+    <p class="rounds" id="rounds-text">Rounds played: 0</p>
+
+    <button class="reset-btn" id="reset-btn">Reset Game</button>
+  </div>
+
+  <!-- Link to your JS file -->
+  <script src="script.js" defer></script>
+</body>
+</html>
